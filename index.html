@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevlar Électromagnétique : Innovation et Protection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Kevlar EM</h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#proprietes" class="nav-link">Propriétés</a>
+                <a href="#applications" class="nav-link">Applications</a>
+                <a href="#recherche" class="nav-link">R&D</a>
+                <a href="#marche" class="nav-link">Marché</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Kevlar Électromagnétique : Innovation et Protection</h1>
+                <p class="hero-subtitle">Découvrez les propriétés révolutionnaires du kevlar carbonisé pour le blindage électromagnétique et la protection radiologique avancée.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>40-51 dB</h3>
+                        <p>Efficacité EMI</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000x</h3>
+                        <p>Plus conducteur</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4900 MPa</h3>
+                        <p>Résistance</p>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--lg" onclick="scrollToSection('proprietes')">Découvrir les propriétés</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Propriétés -->
+    <section id="proprietes" class="section">
+        <div class="container">
+            <h2 class="section-title">Propriétés Techniques</h2>
+            <div class="properties-grid">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Conductivité Électrique</h3>
+                        <p>Jusqu'à 1000 fois plus conducteur après carbonisation à 1200°C</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Blindage EMI</h3>
+                        <p>40-51 dB d'efficacité de blindage électromagnétique</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Protection Radiologique</h3>
+                        <p>32% de réduction du taux de dose, 55% de réduction du taux d'équivalent de dose</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Résistance Mécanique</h3>
+                        <p>4900 MPa de résistance à la traction avec faible densité</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3>Efficacité de Blindage EMI par Fréquence</h3>
+                <div class="chart-container" style="position: relative; height: 400px;">
+                    <canvas id="emiChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Applications -->
+    <section id="applications" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Applications</h2>
+            <div class="applications-grid">
+                <div class="app-card" data-category="spatial">
+                    <div class="app-icon">🚀</div>
+                    <h3>Applications Spatiales</h3>
+                    <ul>
+                        <li>Protection radiologique ISS</li>
+                        <li>Combinaisons EVA</li>
+                        <li>Blindage de modules spatiaux</li>
+                    </ul>
+                    <div class="benefits">
+                        <span class="benefit">Léger</span>
+                        <span class="benefit">Flexible</span>
+                        <span class="benefit">Résistant aux impacts</span>
+                    </div>
+                </div>
+                
+                <div class="app-card" data-category="electronique">
+                    <div class="app-icon">🔌</div>
+                    <h3>Applications Électroniques</h3>
+                    <ul>
+                        <li>Blindage EMI</li>
+                        <li>Câbles à fibres optiques</li>
+                        <li>Protection d'équipements</li>
+                    </ul>
+                    <div class="benefits">
+                        <span class="benefit">Conductivité élevée</span>
+                        <span class="benefit">Stabilité thermique</span>
+                        <span class="benefit">Neutralité EM</span>
+                    </div>
+                </div>
+                
+                <div class="app-card" data-category="defense">
+                    <div class="app-icon">🛡️</div>
+                    <h3>Applications Défense</h3>
+                    <ul>
+                        <li>Gilets pare-balles avec protection EMI</li>
+                        <li>Blindage de véhicules</li>
+                        <li>Protection radar</li>
+                    </ul>
+                    <div class="benefits">
+                        <span class="benefit">Double protection</span>
+                        <span class="benefit">Poids réduit</span>
+                        <span class="benefit">Durabilité</span>
+                    </div>
+                </div>
+                
+                <div class="app-card" data-category="industriel">
+                    <div class="app-icon">🏭</div>
+                    <h3>Applications Industrielles</h3>
+                    <ul>
+                        <li>Filtration industrielle</li>
+                        <li>Renforcement de pneus</li>
+                        <li>Isolation électrique</li>
+                    </ul>
+                    <div class="benefits">
+                        <span class="benefit">Résistance chimique</span>
+                        <span class="benefit">Performances mécaniques</span>
+                        <span class="benefit">Longévité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Recherche -->
+    <section id="recherche" class="section">
+        <div class="container">
+            <h2 class="section-title">Recherche et Développement</h2>
+            <div class="research-content">
+                <div class="research-left">
+                    <h3>Méthodes de Carbonisation</h3>
+                    <div class="carbonization-data">
+                        <div class="temp-card">
+                            <h4>800°C</h4>
+                            <p>Contenu carbone : 73.8%</p>
+                            <p>EMI : 11.93 dB</p>
+                        </div>
+                        <div class="temp-card">
+                            <h4>1000°C</h4>
+                            <p>Contenu carbone : 87.6%</p>
+                            <p>EMI : 32.04 dB</p>
+                        </div>
+                        <div class="temp-card">
+                            <h4>1200°C</h4>
+                            <p>Contenu carbone : 92.3%</p>
+                            <p>EMI : 40.17 dB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-right">
+                    <h3>Résultats de Tests</h3>
+                    <div class="chart-container" style="position: relative; height: 300px;">
+                        <canvas id="carbonChart"></canvas>
+                    </div>
+                    <div class="test-methods">
+                        <h4>Méthodes de Test</h4>
+                        <ul>
+                            <li>Méthode guide d'onde</li>
+                            <li>Méthode ligne de transmission coaxiale</li>
+                            <li>Plage de fréquence : 30 MHz à 1.5 GHz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Marché -->
+    <section id="marche" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Marché et Industries</h2>
+            <div class="market-overview">
+                <div class="market-stats">
+                    <div class="market-stat">
+                        <h3>449.2 M USD</h3>
+                        <p>Marché 2021</p>
+                    </div>
+                    <div class="market-stat">
+                        <h3>653.4 M USD</h3>
+                        <p>Prévision 2031</p>
+                    </div>
+                    <div class="market-stat">
+                        <h3>3.9%</h3>
+                        <p>TCAC</p>
+                    </div>
+                </div>
+                
+                <div class="sectors">
+                    <h3>Secteurs Clés</h3>
+                    <div class="sector-grid">
+                        <div class="sector-card">Sécurité et protection</div>
+                        <div class="sector-card">Aérospatiale</div>
+                        <div class="sector-card">Automobile</div>
+                        <div class="sector-card">Électronique</div>
+                    </div>
+                </div>
+                
+                <div class="companies">
+                    <h3>Entreprises Leaders</h3>
+                    <div class="company-list">
+                        <div class="company">DuPont</div>
+                        <div class="company">Teijin</div>
+                        <div class="company">Hyosung</div>
+                        <div class="company">Kolon Industries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquemment Posées</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Qu'est-ce que le kevlar électromagnétique ?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le kevlar électromagnétique est du kevlar traditionnel qui a subi un processus de carbonisation à haute température, lui conférant des propriétés de conductivité électrique et de blindage électromagnétique exceptionnelles.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Comment améliorer l'efficacité du blindage EMI ?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'efficacité du blindage EMI s'améliore avec une température de carbonisation plus élevée. À 1200°C, l'efficacité peut atteindre 40-51 dB selon la fréquence.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quels sont les avantages par rapport aux métaux traditionnels ?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le kevlar électromagnétique offre une densité plus faible, une flexibilité supérieure, une résistance aux impacts élevée tout en maintenant d'excellentes propriétés de blindage EMI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Contact et Ressources</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Pour Plus d'Informations</h3>
+                    <p>Contactez notre équipe de recherche pour obtenir des données techniques détaillées et des échantillons de test.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h4>Email Technique</h4>
+                            <p>research@kevlar-em.tech</p>
+                        </div>
+                        <div class="contact-method">
+                            <h4>Support Commercial</h4>
+                            <p>sales@kevlar-em.tech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resources">
+                    <h3>Ressources Scientifiques</h3>
+                    <div class="resource-links">
+                        <button class="btn btn--outline" onclick="downloadResource('whitepaper')">
+                            📄 Livre Blanc Technique
+                        </button>
+                        <button class="btn btn--outline" onclick="downloadResource('datasheet')">
+                            📊 Fiches Techniques
+                        </button>
+                        <button class="btn btn--outline" onclick="downloadResource('research')">
+                            🔬 Articles de Recherche
+                        </button>
+                        <button class="btn btn--outline" onclick="downloadResource('samples')">
+                            🧪 Demande d'Échantillons
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kevlar EM</h4>
+                    <p>Innovation en matériaux électromagnétiques avancés</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="#proprietes">Documentation technique</a></li>
+                        <li><a href="#applications">Cas d'usage</a></li>
+                        <li><a href="#recherche">Publications</a></li>
+                        <li><a href="#contact">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li>Aérospatiale</li>
+                        <li>Défense</li>
+                        <li>Électronique</li>
+                        <li>Automobile</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kevlar EM. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
